@@ -1546,7 +1546,7 @@ declare namespace squel {
   }
 
   interface MysqlOnDuplicateKeyUpdateBlock extends AbstractSetFieldBlock {
-    onDupUpdate(name: string, value: any, options?: OnDupUpdateOptions): void;
+    onDupUpdate(name: string, value?: any, options?: OnDupUpdateOptions): void;
   }
 
   interface MysqlOnDuplicateKeyUpdateMixin {
@@ -1557,7 +1557,7 @@ declare namespace squel {
      * @param value Value to set to field.
      * @param options
      */
-    onDupUpdate(name: string, value: any, options?: OnDupUpdateOptions): this;
+    onDupUpdate(name: string, value?: any, options?: OnDupUpdateOptions): this;
   }
 
   interface MysqlCls extends Cls {
